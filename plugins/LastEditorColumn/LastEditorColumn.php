@@ -37,7 +37,7 @@ class LastEditorColumnPluginColumn extends MantisColumn
     // In an ideal world, we'd take the bug IDs and do a single query joining bug IDs to tags, then cache them.
     public function cache( $p_bugs ) {}
     // In an ideal world, we'd use the cache() function, above, instead of lots of calls to tag_bug_get_attached (which hits the database each call)
-    public function display( Bug_Data $p_bug, $p_columns_target )
+    public function display( BugData $p_bug, $p_columns_target )
     {
         $t_query = 'SELECT user_id FROM {bug_history} WHERE bug_id=' . db_param() . ' ORDER BY date_modified DESC, id DESC LIMIT 0,1';
         $t_params = array( $p_bug->id );
