@@ -54,7 +54,7 @@ class LastEditorColumnPlugin extends MantisPlugin
     {
         $this->name        = 'LastEditor Column';
         $this->description = 'Adds a column within the View Issues screen showing the last editor.';
-        $this->version     = '1.0';
+        $this->version     = '1.0.1';
         $this->author      = 'Matthias Blümel';
         $this->contact     = 'matthias.bluemel@krumedia.com';
         $this->url         = 'http://www.krumedia.com';
